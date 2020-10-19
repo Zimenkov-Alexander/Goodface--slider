@@ -1,0 +1,39 @@
+.slider--upper{
+		/* Слайд */
+	.slick-slide{
+		transition: 1s;
+		opacity: 0;
+		transform: scale(0);
+	}
+	//  Слайд активный
+	 .slick-slide.slick-active{
+		transition: 1s;
+		opacity: 1;
+		transform: scale(0.8);
+	 }
+	//  Слайд основной 
+	 .slick-slide.slick-current{
+		transition: 1s;
+		transform: scale(1);
+	 }
+	//  Слайд по центру
+	 .slick-slide.slick-center{}
+}
+
+.slider--lower{
+	/* Слайд */
+	.slick-slide{
+		transition: 1s;
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	//  Слайд активный
+	 .slick-slide.slick-active{
+		opacity: 1;
+		transform: scale(1);
+	 }
+	//  Слайд основной 
+	 .slick-slide.slick-current{}
+	//  Слайд по центру
+	 .slick-slide.slick-center{}
+ }

@@ -1,0 +1,33 @@
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+	background-color: white;
+	font-family: 'TT Norms', Arial, Helvetica, sans-serif;
+	color: #14171A;
+	font-size: 25px;
+}
+
+.wrapper--slider{
+	height: 100%;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	justify-content:center;
+	align-items: center;
+}
+.header{
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+}
+
+@media (max-width:767px){
+	.wrapper--slider{padding: 50px 10px;}
+}

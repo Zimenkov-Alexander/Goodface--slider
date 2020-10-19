@@ -1,0 +1,79 @@
+.slider--upper{
+	/* Стрелка */
+	.slick-arrow{
+		position: absolute;
+		transition: 0.5s;
+		z-index: 100;
+		top: 0%;
+		margin-top: 9.5px;
+		right: 0%;
+		font-size: 0px;
+		width: 56px;
+		height: 56px;
+		background-color: white;
+		border: 2px solid #14171A;
+		cursor: pointer;
+
+		&::before, &::after{
+			content: '';
+			position: absolute;
+			transition: 0.5s;
+			top: 50%;
+			margin-top: -2.5px;
+			left: 50%;
+			margin-left: 2px;
+			width: 16px;
+			height: 5px;
+
+			background-color: #14171A;
+		}
+		&:hover{
+			z-index: 101;
+			border: 2px solid  #0054A6;
+			&::before, &::after{
+				background-color: #0054A6;
+			}
+		}
+		&:active, &:focus{
+			outline: none;
+		}
+	}
+	/* Стрелка влево */
+	.slick-arrow.slick-prev{
+		margin-right: 54px;
+		&::before{
+			transform: translate(-10px, -4px) rotate(-45deg);
+		}
+		&::after{
+			transform: translate(-10px, 4px)  rotate(45deg);
+		}
+	}
+	/* Стрелка вправо */
+	.slick-arrow.slick-next{
+		margin-left: 27px;
+		&::before{
+			transform: translate(-10px, -4px) rotate(45deg);
+		}
+		&::after{
+			transform: translate(-10px, 4px)  rotate(-45deg);
+		}
+		
+	}
+	/* Стрелка не активная */
+	.slick-arrow.slick-prev.slick-disabled, .last-slide{
+		transition: 1s;
+		z-index: 9;
+		cursor: default;
+		border: 2px solid #E8E8E9;
+		&::before, &::after{
+			transition: 1s;
+			background-color: #E8E8E9;
+		}
+		&:hover{
+			border: 2px solid #E8E8E9;
+			&::before, &::after{
+				background-color: #E8E8E9;
+			}
+		}
+	}
+}
