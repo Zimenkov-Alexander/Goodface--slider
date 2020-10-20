@@ -70,6 +70,7 @@
 			background-color: #E8E8E9;
 		}
 		&:hover{
+			z-index: 9;
 			border: 2px solid #E8E8E9;
 			&::before, &::after{
 				background-color: #E8E8E9;

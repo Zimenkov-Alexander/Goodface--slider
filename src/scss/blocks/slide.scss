@@ -16,14 +16,12 @@
 		transition: 1s;
 		transform: scale(1);
 	 }
-	//  Слайд по центру
-	 .slick-slide.slick-center{}
 }
 
 .slider--lower{
 	/* Слайд */
 	.slick-slide{
-		transition: 1s;
+		transition: 0.5s;
 		opacity: 0;
 		transform: scale(0.8);
 	}
@@ -32,8 +30,4 @@
 		opacity: 1;
 		transform: scale(1);
 	 }
-	//  Слайд основной 
-	 .slick-slide.slick-current{}
-	//  Слайд по центру
-	 .slick-slide.slick-center{}
  }

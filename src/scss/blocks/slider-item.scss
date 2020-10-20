@@ -32,7 +32,9 @@
 	}
 }
 .slider--lower{
+	
 	.slider__item{
+		outline: none;
 		position: relative;
 		display: flex;
 		flex-direction: column;
