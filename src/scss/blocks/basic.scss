@@ -4,7 +4,6 @@
 	border: 0;
 	box-sizing: border-box;
 }
-
 html,body{
 	height: 100%;
 	background-color: white;
@@ -12,7 +11,6 @@ html,body{
 	color: #14171A;
 	font-size: 25px;
 }
-
 .wrapper--slider{
 	height: 100%;
 	padding: 50px;
@@ -27,7 +25,17 @@ html,body{
 	opacity: 0;
 	display: none;
 }
-
 @media (max-width:767px){
-	.wrapper--slider{padding: 50px 10px;}
+	.wrapper--slider{
+		width: 400px;
+		margin: 0 auto;
+		padding: 80px 0px;
+	}
+}
+@media (max-width:400px){
+	.wrapper--slider{
+		width: 320px;
+		margin: 0 auto;
+		padding: 80px 0px;
+	}
 }
